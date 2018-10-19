@@ -18,7 +18,7 @@ module.exports = {
   "plugins": [],
   "rules": {
       "eqeqeq": ["error", "always"],
-      "arrow-`parens`": ["error", "as-needed"],
+      "arrow-parens": ["error", "as-needed"],
       "indent": [
         "error",
         2,
