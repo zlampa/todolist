@@ -1,3 +1,7 @@
+.no-display {
+  display: none;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,7 +32,19 @@
   margin: 0 20px;
   font-family: "Permanent Marker";
   font-size: 30px;
-  color: #215A10;
+  color: #4C7F5B;
+}
+
+.header .header__search {
+  height: 30px;
+  width: 300px;
+  padding-left: 15px;
+  border: 1px Solid #4C7F5B;
+  border-radius: 15px;
+}
+
+.header .header__search:focus {
+  outline: none;
 }
 
 .header .header__nav {
@@ -43,20 +59,20 @@
 
 .header .header__nav li {
   list-style: none;
-  color: #215A10;
+  color: #4C7F5B;
   margin: 10px;
 }
 
 .header .header__nav a {
   text-decoration: none;
-  color: #215A10;
+  color: #4C7F5B;
   font-size: 20px;
-  padding: 5px 15px;
-  border: 1px solid #215A10;
+  padding: 5px 10px;
+  border: 1px solid #4C7F5B;
 }
 
 .header .header__nav a:hover {
-  background-color: #215A10;
+  background-color: #4C7F5B;
   color: #fff;
 }
 
@@ -64,14 +80,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-family: Lato;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  color: #215A10;
+  color: #4C7F5B;
 }
 
 @media screen and (max-width: 800px) {
@@ -113,16 +126,16 @@
 
 .main .main__content a {
   text-decoration: none;
-  color: #215A10;
+  color: #4C7F5B;
   font-size: 20px;
   padding: 10px 40px;
-  border: 1px solid #215A10;
+  border: 1px solid #4C7F5B;
   max-width: 102px;
   background-color: #A9C8A0;
 }
 
 .main .main__content a:hover {
-  background-color: #215A10;
+  background-color: #4C7F5B;
   color: #fff;
 }
 
@@ -150,5 +163,32 @@
   .main .main__img {
     margin-top: 10px;
   }
+}
+
+.main .main__left {
+  background-color: #CACECB;
+  width: 200px;
+}
+
+.main .main__left .main__left__nav {
+  padding: 10px;
+}
+
+.main .main__left .main__left__nav li {
+  list-style: none;
+  padding: 10px;
+}
+
+.main .main__left .main__left__nav a {
+  text-decoration: none;
+  color: #111;
+}
+
+.main .main__left .main__left__nav a:hover {
+  color: #676C68;
+}
+
+.main .main__left .main__left__nav i {
+  padding-right: 5px;
 }
 /*# sourceMappingURL=index.css.map */
