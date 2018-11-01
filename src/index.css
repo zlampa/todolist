@@ -32,14 +32,14 @@
   margin: 0 20px;
   font-family: "Permanent Marker";
   font-size: 30px;
-  color: #4C7F5B;
+  color: #373434;
 }
 
 .header .header__search {
   height: 30px;
   width: 300px;
   padding-left: 15px;
-  border: 1px Solid #4C7F5B;
+  border: 1px Solid #373434;
   border-radius: 15px;
 }
 
@@ -59,20 +59,20 @@
 
 .header .header__nav li {
   list-style: none;
-  color: #4C7F5B;
+  color: #373434;
   margin: 10px;
 }
 
 .header .header__nav a {
   text-decoration: none;
-  color: #4C7F5B;
+  color: #373434;
   font-size: 20px;
   padding: 5px 10px;
-  border: 1px solid #4C7F5B;
+  border: 1px solid #373434;
 }
 
 .header .header__nav a:hover {
-  background-color: #4C7F5B;
+  background-color: #373434;
   color: #fff;
 }
 
@@ -84,7 +84,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  color: #4C7F5B;
+  color: #373434;
 }
 
 @media screen and (max-width: 800px) {
@@ -126,16 +126,16 @@
 
 .main .main__content a {
   text-decoration: none;
-  color: #4C7F5B;
+  color: #373434;
   font-size: 20px;
   padding: 10px 40px;
-  border: 1px solid #4C7F5B;
+  border: 1px solid #373434;
   max-width: 102px;
   background-color: #A9C8A0;
 }
 
 .main .main__content a:hover {
-  background-color: #4C7F5B;
+  background-color: #373434;
   color: #fff;
 }
 
@@ -166,11 +166,18 @@
 }
 
 .main .main__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background-color: #CACECB;
   width: 200px;
-}
-
-.main .main__left .main__left__nav {
   padding: 10px;
 }
 
@@ -181,7 +188,7 @@
 
 .main .main__left .main__left__nav a {
   text-decoration: none;
-  color: #111;
+  color: #373434;
 }
 
 .main .main__left .main__left__nav a:hover {
@@ -190,5 +197,44 @@
 
 .main .main__left .main__left__nav i {
   padding-right: 5px;
+}
+
+.main .main__left .main__left__bar {
+  color: #373434;
+  padding: 10px;
+  width: 100%;
+}
+
+.main .main__left .main__left__bar:before {
+  content: "\203A";
+  font-size: 25px;
+  padding-right: 13px;
+}
+
+.main .main__left .main__left__bar:hover {
+  cursor: pointer;
+  color: #676C68;
+}
+
+.main .main__left .active:before {
+  content: "\2304";
+  padding-right: 0px;
+}
+
+.main .main__left .main__left__section {
+  padding: 0px 25px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.main .main__left .main__left__section .section__item {
+  padding: 10px;
+}
+
+.main .main__left .main__left__section .section__item:hover {
+  cursor: pointer;
+  color: #676C68;
 }
 /*# sourceMappingURL=index.css.map */
