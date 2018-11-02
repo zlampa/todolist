@@ -6,14 +6,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 50px;
-  background-color: #e4e4e4;
+  background-color: #f0eeee;
 }
 
 @media screen and (max-width: 400px) {
@@ -76,10 +76,17 @@
   color: #fff;
 }
 
+.header .header__nav a .black:hover {
+  background-color: #373434;
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: Lato;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -131,7 +138,7 @@
   padding: 10px 40px;
   border: 1px solid #373434;
   max-width: 102px;
-  background-color: #A9C8A0;
+  background-color: #cfdacd;
 }
 
 .main .main__content a:hover {
@@ -166,6 +173,7 @@
 }
 
 .main .main__left {
+  font-family: Arial, Helvetica, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,10 +181,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  background-color: #CACECB;
+  background-color: #e7e7e7;
   width: 200px;
   padding: 10px;
 }
@@ -236,5 +241,59 @@
 .main .main__left .main__left__section .section__item:hover {
   cursor: pointer;
   color: #676C68;
+}
+
+.main .main__left .main__left__section .section__item:before {
+  content: "\2022";
+  padding-right: 10px;
+}
+
+.main .main__left .main__left__section .add-section {
+  color: #585555;
+}
+
+.main .main__left .main__left__section .add-section:before {
+  content: "\FF0B";
+  font-size: 15px;
+  padding-right: 5px;
+}
+
+.main .main__left .main__left__section .add-section:hover {
+  background-color: #373434;
+  color: #fff;
+}
+
+.main .main__tasks {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  width: 800px;
+  border: 1px Solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .main__tasks .main__tasks__capture {
+  font-size: 20px;
+}
+
+.main .main__tasks .main__tasks__item {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .main__tasks .main__tasks__item input {
+  width: 18px;
+  height: 18px;
+}
+
+.main .main__tasks .main__tasks__item .item_title {
+  padding-left: 20px;
 }
 /*# sourceMappingURL=index.css.map */
