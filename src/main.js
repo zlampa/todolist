@@ -9,3 +9,10 @@ collapsible[0].addEventListener("click", function() {
         content.style.maxHeight = content.scrollHeight + "px";
     }
 })
+
+const menuBar = document.getElementById('menu_bar');
+
+menuBar.addEventListener("click", function() {
+    const hiddenMenu = document.getElementsByClassName("main__left");
+    hiddenMenu[0].classList.toggle("showed");
+});

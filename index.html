@@ -15,7 +15,10 @@
 </head>
 <body>
   <header class="header">
-    <section class="header__logo">Todolist</section>
+    <div href="#" class="header__logo">
+      <i class="fa fa-bars" id="menu_bar"></i>
+      <span>Todolist</span>
+    </div>
     <input type="text" placeholder="Search.." name="search" class="header__search">
     <nav class="header__nav">
       <li>
@@ -49,7 +52,7 @@
       <nav class="main__left__nav">
         <li>
           <a href="#">
-            <i class="fa fa-folder"></i>
+            <i class="fa fa-folder" id=""></i>
             All tasks
           </a>
         </li>
@@ -78,6 +81,10 @@
       <div class="main__tasks__item">
         <input type="checkbox">
         <span class="item_title">First task</span>
+      </div>
+      <div class="main__tasks__item">
+        <input type="checkbox">
+        <span class="item_title">Second task</span>
       </div>
     </section>
   </main>

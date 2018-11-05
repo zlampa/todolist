@@ -1,4 +1,4 @@
-$base-color: #373434;
+$base-color: #494545;
 $base-hover: #676C68;
 $base-font-family: Lato;
 
@@ -9,27 +9,49 @@ $base-font-family: Lato;
 .header {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
-    @media screen and (max-width: 400px) {
-        flex-direction: column;
-        justify-content: space-around;
-        height: 90px;
-    }
+    border-bottom: 1px Solid #c7c3c3;
+    //@media screen and (max-width: 400px) {
+    //    flex-direction: column;
+    //    justify-content: space-around;
+    //    height: 90px;
+    //}
     justify-content: space-around;
     align-items: center;
-    height: 50px;
+    height: 40px;
     background-color: #f0eeee;
     .header__logo {
-        margin: 0 20px;
+        //margin: 0 20px;
         font-family: "Permanent Marker";
-        font-size: 30px;
+        font-size: 18px;
         color: $base-color;
+        .fa {
+            display: none;
+            padding: 4px 6px;;
+            &:hover {
+                color: white;
+                background-color: $base-color;
+            }
+        }
+        @media screen and(max-width: 700px) {
+            span {
+                display: none;
+            }
+            .fa {
+                display: flex;
+                font-size: 20px;
+            }
+        }
     }
     .header__search {
-        height: 30px;
+        height: 25px;
         width: 300px;
         padding-left: 15px;
+        font-size: 14px;
         border: 1px Solid $base-color;
         border-radius: 15px;
+        @media screen and(max-width: 700px) {
+            width: 150px;
+        }
         &:focus {
             outline: none;
         }
@@ -41,15 +63,15 @@ $base-font-family: Lato;
         li {
             list-style: none;
             color: $base-color;
-            margin: 10px;
+            margin: 5px;
 
         }
         a {
             text-decoration: none;
             color: $base-color;
-            font-size: 20px;
-            padding: 5px 10px;
-            border: 1px solid $base-color;
+            font-size: 18px;
+            padding: 4px 8px;
+            //border: 1px solid $base-color;
             &:hover {
                 background-color: $base-color;
                 color: #fff;
@@ -67,10 +89,13 @@ $base-font-family: Lato;
 .main {
     display: flex;
     justify-content: center;
+    overflow: hidden;
+    //position: absolute;
     //justify-content: flex-start;
-    @media screen and (max-width: 800px) {
-        flex-direction: column;
-    }
+
+    //@media screen and (max-width: 800px) {
+    //   flex-direction: column;
+    //}
     //justify-content: flex-start;
     font-family: $base-font-family;
     align-items: flex-start;
@@ -126,10 +151,15 @@ $base-font-family: Lato;
         font-family: Arial, Helvetica, sans-serif;
         display: flex;
         flex-direction: column;
+        border-right: 1px Solid #c7c3c3;
         //justify-content: flex-start;
-        background-color: #e7e7e7;
-        width: 200px;
+        background-color: #f0eeee;
+        width: 300px;
         padding: 10px;
+        @media screen and(max-width: 700px) {
+            display: none;
+        }
+
         //border: 1px Solid red;
         .main__left__nav {
             
@@ -140,6 +170,7 @@ $base-font-family: Lato;
             }
             a {
                 text-decoration: none;
+                font-size: 14px;
                 color: $base-color;
                 &:hover {
                     color: $base-hover;
@@ -151,8 +182,11 @@ $base-font-family: Lato;
         }
         .main__left__bar {
             color: $base-color;
+            //border-bottom: 1px Solid #c7c3c3;
+            //border-width: 100px;
             //border: none;
             padding: 10px;
+            font-size: 14px;
             width: 100%;
             &:before {
                 content: "\203A";
@@ -171,6 +205,7 @@ $base-font-family: Lato;
 
         .main__left__section {
             padding: 0px 25px;
+            font-size: 14px;
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.2s ease-out;
@@ -204,15 +239,17 @@ $base-font-family: Lato;
         font-family: Arial, Helvetica, sans-serif;
         padding: 20px;
         width: 800px;
-        border: 1px Solid red;
+        border: 1px Solid $base-color;
         display: flex;
         flex-direction: column;
+        flex-shrink: 2;
         .main__tasks__capture {
-            font-size: 20px;
+            font-size: 18px;
         }
         .main__tasks__item {
             padding-top: 20px;
             display: flex;
+            font-size: 14px;
             input {
                 width: 18px;
                 height: 18px;
@@ -222,5 +259,12 @@ $base-font-family: Lato;
                 
             }
         }
+    }
+    .showed {
+        display: flex;
+        flex-direction: column;
+        //flex-grow: 3;
+        //width: 300px;
+        //z-index: 2;
     }
 }
