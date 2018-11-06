@@ -10,7 +10,11 @@
         type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato|Permanent+Marker" rel="stylesheet">
+  <!--
+
+  -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <title>Todolist</title>
 </head>
 <body>
@@ -71,21 +75,40 @@
       </nav>
       <div class="main__left__bar">Sections</div>
       <div class="main__left__section">
-        <div class="section__item">Work</div>
-        <div class="section__item">Private</div>
+        <div class="section__item">
+          <div class="section__item__content">Work</div>
+          <i class="far fa-edit"></i>
+        </div>
+        <div class="section__item">
+            <div class="section__item__content">Private</div>
+            <i class="far fa-edit"></i>
+          </div>
         <div class="section__item add-section">Add section</div>
       </div>
     </section>
     <section class="main__tasks">
       <div class="main__tasks__capture">Work</div>
       <div class="main__tasks__item">
-        <input type="checkbox">
-        <span class="item_title">First task</span>
+        <div class="item__main">
+          <input type="checkbox">
+          <span class="item_title">First task</span>
+        </div>
+        <div class="item__minor">
+          <div>Today</div>
+          <i class="far fa-edit"></i>
+        </div>
       </div>
       <div class="main__tasks__item">
-        <input type="checkbox">
-        <span class="item_title">Second task</span>
-      </div>
+          <div class="item__main">
+            <input type="checkbox">
+            <span class="item_title">Second task</span>
+          </div>
+          <div class="item__minor">
+            <div>Yesterday</div>
+            <i class="far fa-edit"></i>
+          </div>
+        </div>
+      <div class="main__tasks__item add-task">Add task</div>
     </section>
   </main>
   <script src="src/main.js"></script>
