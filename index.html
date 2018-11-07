@@ -83,10 +83,17 @@
             <div class="section__item__content">Private</div>
             <i class="far fa-edit"></i>
           </div>
-        <div class="section__item add-section">Add section</div>
+        <div class="section__item add-section" id="add-button">Add section</div>
+        <div class="section__item__add no-display" id="add-section">
+            <input placeholder="Name your section">
+            <div class="add__buttons">
+              <a class="add__buttons__add" href="#">Add section</a>
+              <a class="add__buttons__cancel" href="#">Cancel</a>
+            </div>  
+        </div>
       </div>
     </section>
-    <section class="main__tasks">
+    <section class="main__tasks" id="task-holder">
       <div class="main__tasks__capture">Work</div>
       <div class="main__tasks__item">
         <div class="item__main">

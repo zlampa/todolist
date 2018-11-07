@@ -10,11 +10,11 @@
   border-bottom: 1px Solid #c7c3c3;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  height: 40px;
+  background-color: #f0eeee;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 40px;
-  background-color: #f0eeee;
 }
 
 .header .header__logo {
@@ -287,6 +287,39 @@
           justify-content: space-between;
 }
 
+.main .main__left .main__left__section .section__item__add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  line-height: 20px;
+}
+
+.main .main__left .main__left__section .section__item__add input {
+  height: 20px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+.main .main__left .main__left__section .section__item__add .add__buttons a {
+  text-decoration: none;
+  color: #494545;
+  padding: 10px;
+}
+
+.main .main__left .main__left__section .section__item__add .add__buttons .add__buttons__add {
+  background-color: #494545;
+  color: #fff;
+}
+
+.main .main__left .main__left__section .section__item__add .add__buttons .add__buttons__cancel:hover {
+  text-decoration: underline;
+}
+
 .main .main__left .main__left__section .add-section {
   color: #585555;
   -webkit-box-pack: start;
@@ -306,6 +339,10 @@
   color: #fff;
 }
 
+.main .main__left .main__left__section .no-display {
+  display: none;
+}
+
 .main .main__tasks {
   font-family: Arial, Helvetica, sans-serif;
   padding: 20px 20px 10px 20px;
@@ -319,8 +356,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-negative: 2;
-      flex-shrink: 2;
+  -ms-flex-negative: 4;
+      flex-shrink: 4;
 }
 
 .main .main__tasks .main__tasks__capture {
@@ -396,13 +433,14 @@
   color: #fff;
 }
 
+.main .no-display {
+  display: none;
+}
+
 .main .showed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  width: 700px;
 }
 /*# sourceMappingURL=index.css.map */

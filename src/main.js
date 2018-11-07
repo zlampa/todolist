@@ -14,5 +14,22 @@ const menuBar = document.getElementById('menu_bar');
 
 menuBar.addEventListener('click', function () {
   const hiddenMenu = document.getElementsByClassName('main__left');
+  const taskHolder = document.getElementById('task-holder');
+  taskHolder.classList.toggle('no-display');
   hiddenMenu[0].classList.toggle('showed');
+
 });
+
+const addSectionBtn = document.getElementById('add-button');
+
+addSectionBtn.addEventListener('click', function () {
+  addSectionBtn.classList.add('no-display');
+  const addSection = document.getElementById('add-section');
+  addSection.classList.remove('no-display');
+
+
+});
+
+
+
+
