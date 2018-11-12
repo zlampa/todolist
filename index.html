@@ -18,13 +18,13 @@
   <title>Todolist</title>
 </head>
 <body>
-  <header class="header">
-    <div href="#" class="header__logo">
-      <i class="fa fa-bars" id="menu_bar"></i>
+  <header class="top-header">
+    <div href="#" class="top-header-logo">
+      <i class="fa fa-bars" id="menu-bar"></i>
       <span>Todolist</span>
     </div>
-    <input type="text" placeholder="Search.." name="search" class="header__search">
-    <nav class="header__nav">
+    <input type="text" placeholder="Search.." name="search" class="top-header-search">
+    <nav class="top-header-nav">
       <li>
         <a href="#" class="no-display">Log in</a>
       </li>
@@ -41,19 +41,19 @@
   </header>
   <main class="main">
     <!--
-      <section class="main__content no-display">
+      <section class="main-content no-display">
       <h1 class="no-display">Save all your ideas and affairs.</h1>
       <p class="no-display">All things in one place, easy and simple. <br>
         You don't need to worry about forgetting something. <br>
         We will save all you need for you.</p>
       <a href="#" class="no-display">Get Started</a>
     </section>
-    <div class="main__img no-display"> 
+    <div class="main-img no-display"> 
         <img src="src/img/main-image.jpg">
     </div>
     -->
-    <section class="main__left">
-      <nav class="main__left__nav">
+    <section class="main-left">
+      <nav class="main-left-nav">
         <li>
           <a href="#">
             <i class="fa fa-folder" id=""></i>
@@ -73,49 +73,49 @@
           </a>
         </li>
       </nav>
-      <div class="main__left__bar">Sections</div>
-      <div class="main__left__section">
-        <div class="section__item">
-          <div class="section__item__content">Work</div>
+      <div class="main-left-bar">Sections</div>
+      <div class="main-left-section">
+        <div class="section-item">
+          <div class="section-item-content">Work</div>
           <i class="far fa-edit"></i>
         </div>
-        <div class="section__item">
-            <div class="section__item__content">Private</div>
+        <div class="section-item">
+            <div class="section-item-content">Private</div>
             <i class="far fa-edit"></i>
           </div>
-        <div class="section__item add-section" id="add-button">Add section</div>
-        <div class="section__item__add no-display" id="add-section">
+        <div class="section-item add-section" id="add-button">Add section</div>
+        <div class="section-item-add no-display" id="add-section">
             <input placeholder="Name your section">
-            <div class="add__buttons">
-              <a class="add__buttons__add" href="#">Add section</a>
-              <a class="add__buttons__cancel" href="#">Cancel</a>
+            <div class="add-buttons">
+              <a class="add-buttons-add" href="#">Add section</a>
+              <a class="add-buttons-cancel" href="#">Cancel</a>
             </div>  
         </div>
       </div>
     </section>
-    <section class="main__tasks" id="task-holder">
-      <div class="main__tasks__capture">Work</div>
-      <div class="main__tasks__item">
-        <div class="item__main">
+    <section class="main-tasks" id="task-holder">
+      <div class="main-tasks-capture">Work</div>
+      <div class="main-tasks-item">
+        <div class="item-main">
           <input type="checkbox">
-          <span class="item_title">First task</span>
+          <span class="item-title">First task</span>
         </div>
-        <div class="item__minor">
+        <div class="item-minor">
           <div>Today</div>
           <i class="far fa-edit"></i>
         </div>
       </div>
-      <div class="main__tasks__item">
-          <div class="item__main">
+      <div class="main-tasks-item">
+          <div class="item-main">
             <input type="checkbox">
-            <span class="item_title">Second task</span>
+            <span class="item-title">Second task</span>
           </div>
-          <div class="item__minor">
+          <div class="item-minor">
             <div>Yesterday</div>
             <i class="far fa-edit"></i>
           </div>
         </div>
-      <div class="main__tasks__item add-task">Add task</div>
+      <div class="main-tasks-item add-task">Add task</div>
     </section>
   </main>
   <script src="src/main.js"></script>

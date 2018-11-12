@@ -1,4 +1,4 @@
-const collapsible = document.getElementsByClassName('main__left__bar');
+const collapsible = document.getElementsByClassName('main-left-bar');
 
 collapsible[0].addEventListener('click', function () {
   this.classList.toggle('active');
@@ -10,10 +10,10 @@ collapsible[0].addEventListener('click', function () {
   }
 });
 
-const menuBar = document.getElementById('menu_bar');
+const menuBar = document.getElementById('menu-bar');
 
 menuBar.addEventListener('click', function () {
-  const hiddenMenu = document.getElementsByClassName('main__left');
+  const hiddenMenu = document.getElementsByClassName('main-left');
   const taskHolder = document.getElementById('task-holder');
   taskHolder.classList.toggle('no-display');
   hiddenMenu[0].classList.toggle('showed');
